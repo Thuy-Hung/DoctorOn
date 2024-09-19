@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".Activities.MainActivity"
+    >
+    <RelativeLayout
+        android:id="@+id/reltlo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbar"
+                android:background="@color/teal_200"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+               />
+            <ImageButton
+                android:id="@+id/btn_notification"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_notification"
+                android:background="@color/teal_200"
+                android:padding="12dp"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container"
+            />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/ty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottomAppBar"
+                android:layout_gravity="bottom"
+                android:backgroundTint="@color/teal_200"
+                app:fabCradleMargin="10dp"
+                app:fabCradleRoundedCornerRadius="80dp"
+                >
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bottom_navigation"
+                    app:labelVisibilityMode="labeled"
+                    app:menu="@menu/bottom_menu"
+                    android:background="@android:color/transparent"/>
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/logo_app"
+                android:backgroundTint="@color/primary"
+                app:layout_anchor="@+id/bottomAppBar"
+                app:layout_anchorGravity="bottom|center" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_drawer"
+        android:layout_gravity="start"
+        app:itemIconTint="@color/teal_300"
+        app:itemTextColor="@color/black"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        android:background="@color/white"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

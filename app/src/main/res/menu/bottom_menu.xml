@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/img_nav_home"/>
+    <item
+        android:id="@+id/Message"
+        android:title="Messages"
+        android:icon="@drawable/img_user_cyan_300"/>
+    <item
+        android:id="@+id/fab"
+        android:title=""
+        android:enabled="false"/>
+    <item
+        android:id="@+id/Calender"
+        android:title="Calendar"
+        android:icon="@drawable/img_calendar_cyan_300"/>
+    <item
+        android:id="@+id/Account"
+        android:title="Account"
+        android:icon="@drawable/img_nav_account"/>
+</menu>
