@@ -64,7 +64,7 @@ The application is developed in Kotlin, focusing on monitoring and analyzing use
 ## 🔗 Related Repositories
 
 - [IoT Device Code](link-to-iot-repo)
-- [AI Model Code](link-to-model-repo)
+- [AI Model Code](https://github.com/Thuy-Hung/Model-predict-health-main.git)
 
 ## 📄 License
 
