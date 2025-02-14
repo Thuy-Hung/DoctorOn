@@ -52,7 +52,7 @@ The application is developed in Kotlin, focusing on monitoring and analyzing use
 
 1. Clone the repository:
 ```bash
-[https://github.com/Thuy-Hung/DoctorOn.git]
+https://github.com/Thuy-Hung/DoctorOn.git
 ```
 
 2. Open the project in Android Studio
