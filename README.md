@@ -66,6 +66,10 @@ https://github.com/Thuy-Hung/DoctorOn.git
 - [IoT Device Code](link-to-iot-repo)
 - [AI Model Code](https://github.com/Thuy-Hung/Model-predict-health-main.git)
 
+## Documentation
+
+[Documentation](https://drive.google.com/file/d/1iZwjlcZYkubMzPFIGXHrtLVdGs19yLia/view?usp=sharing)
+
 ## 📄 License
 
 [MIT License](LICENSE)
